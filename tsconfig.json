@@ -6,6 +6,9 @@
     "lib": [
       "ES2022"
     ],
+    "types": [
+      "node"
+    ],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -18,8 +21,11 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src/**/*",
-    "tests/**/*",
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "global.d.ts",
     "nativewind-env.d.ts"
   ],
   "exclude": [
